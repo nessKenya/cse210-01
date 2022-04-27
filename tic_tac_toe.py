@@ -1,3 +1,9 @@
+'''
+Author: Nelson Muchonji Bifwoli
+Assignment: W02 Prove: Developer - Solo Code Submission (Tic Tac Toe Code)
+'''
+
+
 ''' Create the board using the dictionary with the keys location from left to right. The values will change
 according to the players moves. '''
 
@@ -24,7 +30,7 @@ def printBoard(board):
     print(board['7'] + '|' + board['8'] + '|' + board['9'])
 
 # Now we'll write the main function which has all the gameplay functionality.
-def game():
+def main():
 
     turn = 'X'
     count = 0
@@ -105,7 +111,7 @@ def game():
         for key in board_keys:
             theBoard[key] = " "
 
-        game()
+        main()
 
 if __name__ == "__main__":
-    game()
+    main()
